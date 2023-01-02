@@ -1,0 +1,35 @@
+.navbar{
+    @apply flex justify-between items-center px-4 h-[80px] 
+}
+.search__input{
+    transition: .5s ease-in;
+
+    @apply flex items-center w-[155px] h-[34px] bg-white rounded-full shadow-md px-2
+}
+.searchInput{
+    @apply w-full outline-none border-none bg-transparent rounded-full
+}
+.search__span{
+    @apply bg-yellow-500 rounded-full p-1 text-white
+}
+ .actives{
+    transition: .5s ease-in;
+   @apply w-[0px] h-[34px] text-xl text-gray-400 rounded-full
+}
+
+.dropdown__main{
+    @apply relative 
+}
+.dropdown__items{
+    @apply  flex flex-col absolute top-0 right-0 mt-4 border w-[173px] h-[114px] bg-white 
+}
+
+.hideDropDwon{
+    display: none;
+}
+.dropdown__items p{
+    @apply hover:bg-yellow-500 px-2 flex gap-1 text-[10px] py-3
+}
+.dropdown__items span{
+    @apply text-lg
+}

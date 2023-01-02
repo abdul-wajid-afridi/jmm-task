@@ -1,0 +1,14 @@
+.sideBar{
+    @apply flex flex-col gap-5 text-white bg-[#0F0E0C] w-[264px] h-screen
+}
+.sideBar__menu{
+    @apply flex flex-col  py-2 
+}
+.sideBar__items{
+        @apply flex gap-4 px-2 text-[14px] capitalize items-center hover:bg-[#3E2D05] hover:text-[#ffc641] hover:border-l-4 border-[#ffc641] py-2
+}
+
+.active{
+    transition: .3s ease-in;
+    @apply absolute left-[-100%]
+}
