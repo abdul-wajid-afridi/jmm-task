@@ -1,0 +1,71 @@
+.navbar__main{
+    @apply flex relative items-center justify-around bg-gray-100 h-[80px] mb-6 sm:mb-10
+}
+/* logo  */
+.navbar__logo{
+    @apply flex
+}
+.navbar__logo p{
+@apply text-2xl sm:text-5xl text-gray-800 capitalize font-serif
+}
+
+.navbar__icon{
+    @apply opacity-0 
+}
+
+/* navbar menu  */
+.navbar__menu{
+    @apply flex justify-between w-[70%] items-center
+}
+.navbar__item{
+    @apply text-sm hover:text-purple-600
+}
+.navbar__items__container{
+    @apply flex gap-5
+}
+/* social icons */
+.navbar__social__icons{
+    @apply flex items-center gap-5
+}
+.navbar__social__icons span{
+    transition: .2s ease-in;
+    @apply  border-2 border-gray-500 p-1 rounded-full transform hover:rotate-90 hover:text-purple-700
+}
+
+.navbar__cart{
+    @apply flex items-center gap-1 bg-purple-500 px-4 hover:shadow-lg hover:shadow-purple-500 py-1 rounded-xl text-white hover:bg-purple-600
+}
+
+/* for mobile screen navbar */
+
+@media(max-width:768px){
+    .navbar__icon{
+        @apply opacity-100 
+    }
+    .navbar__logo{
+        @apply flex items-center justify-around w-full
+    }
+    /* menu */
+    .navbar__menu{
+    transition: all .5s ease-in;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        @apply flex flex-col py-4 absolute top-0 w-full h-[60vh] mt-[80px] bg-gray-800
+    }
+
+   .navbar__menu.navbar__active{
+    clip-path: polygon(0 0, 100% 0%, 99% 0, 0 0);
+}
+.navbar__items__container{
+    @apply flex flex-col 
+}
+.navbar__item{
+    @apply text-sm text-white hover:text-purple-500
+}
+/* social icons  */
+
+.navbar__social__icons span{
+    transition: .2s ease-in;
+    @apply text-white  border-2 border-purple-500 p-1 rounded-full transform hover:rotate-90 hover:text-purple-700
+}
+
+}

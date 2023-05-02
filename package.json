@@ -2,7 +2,10 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/styled": "^11.10.5",
     "@reduxjs/toolkit": "^1.9.1",
     "@stripe/react-stripe-js": "^1.16.1",
     "@stripe/stripe-js": "^1.46.0",
@@ -11,7 +14,9 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
     "faker": "^6.6.6",
+    "framer-motion": "^8.1.4",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-chartjs-2": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-google-charts": "^4.0.0",
@@ -39,7 +44,9 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
+
     ],
+
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
